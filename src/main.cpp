@@ -62,7 +62,7 @@ void setup()
 {
   lcd.init();
   lcd.backlight();
-  atualizarLCD("SISTEMA OFF", "Acesso Livre", "", obterDataHora());
+
 
   configTime(gmtOffset_sec, daylightOffset_sec, servidorNTP);
 
@@ -75,6 +75,8 @@ void setup()
   registrarCallbackMensagem(tratarMensagemRecebida);
   conectarMQTT();
   configurarLedRGB();
+
+  atualizarLCD("SISTEMA OFF", "Acesso Livre", "", obterDataHora());
 }
 
 void loop()
