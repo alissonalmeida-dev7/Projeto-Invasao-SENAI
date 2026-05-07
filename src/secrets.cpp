@@ -12,11 +12,11 @@ const char *WIFI_SENHA = "info@134";
 //                           MQTT
 //==================================================================
 
-const char *MQTT_BROKER = "";
+const char *MQTT_BROKER = "89175cc017d94daca0e8c47428b6a311.s1.eu.hivemq.cloud";
 const int MQTT_PORTA = 8883; // 8883 para TSL e 1883 para sem TLS
-const char *MQTT_CLIENT_ID = "";
-const char *MQTT_USUARIO = "";
-const char *MQTT_SENHA = "";
+const char *MQTT_CLIENT_ID = "esp32_alisson_almeida";
+const char *MQTT_USUARIO = "Alisson";
+const char *MQTT_SENHA = "Senai@134";
 const bool MQTT_USAR_TLS = true;
 const bool USAR_AWS_IOT = false; // Progmen evita que isto va para memoria ram
 const char MQTT_CERTIFICADO_CA[] PROGMEM = R"EOF( 
@@ -54,8 +54,10 @@ emyPxgcYxn/eR44/KJ4EBs+lVDR3veyJm+kXQ99b21/+jh5Xos1AnX5iItreGCc=
 )EOF"; // R indica raw string 
 const char *TOPICOS_PUBLICAR[] = {};
 const int TOTAL_TOPICOS_PUBLICAR = 0;
-const char *TOPICOS_RECEBER[] = {};
-const int TOTAL_TOPICOS_RECEBER = 0;
+const char *TOPICOS_RECEBER[] = {
+    "sistema/estado"
+};
+const int TOTAL_TOPICOS_RECEBER = 1;
 
 //================================================================
 //                          DEBUG
