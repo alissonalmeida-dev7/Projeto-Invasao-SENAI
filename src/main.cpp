@@ -245,7 +245,7 @@ void tratarJsonComando(const String &mensagem)
     {
       estadoSistema = "invasao";
       atualizarLCD("!!! INVASAO !!!", "Setor Violado", "Aguardando Senha...", obterDataHora());
-      lampada.piscar(10.0f);
+      lampada.piscar(1.0f);
       debugInfo("=> ALERTA CRITICO: INVASAO DETECTADA!");
       enviarMensagemWhatsapp("🚨🚨 Alerta!!! Movimentacao suspeita detectada");
     }
