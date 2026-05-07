@@ -32,7 +32,7 @@ int tentativasSenha = 0;
 
 const int PIN_LED_RGB = 48;
 const int QNTD_LEDS = 1;
-const char TOPICO_COMANDO[] = "esp32/comando";
+const char TOPICO_COMANDO[] = "sistema/estado";
 
 LED lampada(46);
 
