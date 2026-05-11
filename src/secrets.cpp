@@ -54,9 +54,7 @@ emyPxgcYxn/eR44/KJ4EBs+lVDR3veyJm+kXQ99b21/+jh5Xos1AnX5iItreGCc=
 )EOF"; // R indica raw string 
 const char *TOPICOS_PUBLICAR[] = {};
 const int TOTAL_TOPICOS_PUBLICAR = 0;
-const char *TOPICOS_RECEBER[] = {
-    "sistema/estado"
-};
+const char *TOPICOS_RECEBER[] = {"sistema/estado"};
 const int TOTAL_TOPICOS_RECEBER = 1;
 
 //================================================================
